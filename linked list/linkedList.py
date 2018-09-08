@@ -32,7 +32,7 @@ class MyLinkedList:
         if self.count == 1:
             self.tail = self.head
 
-    def addAtTheEnd(self, valueToAdd):
+    def addAtTheEndOfTheList(self, valueToAdd):
         #create a node that holds the value to be stored
         newNode = Node(valueToAdd)
 
@@ -47,12 +47,58 @@ class MyLinkedList:
         self.tail = newNode
         self.count += 1
         
-    def iter(self):
+    def iterateThroughTheList(self):
         currentNode = self.head
         while currentNode != None:
             print(currentNode.data)
             currentNode = currentNode.nextNode
 
+    def removeTheHeadItem(self):
+
+        #you cant remove an item if the list is empty
+        if self.count != 0:
+
+            #just set the value of the head node to be equal to the value of its nextNode
+            self.head = self.head.nextNode
+            self.count -= 1
+
+            if self.count == 0:
+                self.tail = None
+    
+    def removeTheTailItem(self):
+        #you can remove an item if only there is an item to be removed xD
+        if self.count != 0:
+
+            #if the list has only one item, just remove the head and tail reference from the node
+            if self.count == 1:
+                self.head = None
+                self.tail = None
+            else:
+                #in order to find the second to last item in the list, we need to iterate through all the list
+                #we start at the head of the list
+                current = self.head
+
+                #while the value of the current node seen is not = to tail, move through the list
+                #it stops as the second to last item because the nextNode value would be the value of the tail node
+                while current.nextNode != self.tail:
+                    current = current.nextNode
+                
+                #update the nextNode pointer of the second to last element to be null
+                current.nextNode = None
+
+                #update the value of the tail pointer
+                self.tail = current
+            self.count -= 1
+
+    def seeHeadItem(self):
+        return self.head.data
+    
+    def seeTailItem(self):
+        return self.tail.data
+        #print(self.tail.data)
+    
     def size(self):
         return self.count
+    
+
     
