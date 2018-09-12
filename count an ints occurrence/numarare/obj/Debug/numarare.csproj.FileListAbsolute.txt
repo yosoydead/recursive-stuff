@@ -1,0 +1,7 @@
+D:\exercitii\numarare\numarare\bin\Debug\numarare.exe.config
+D:\exercitii\numarare\numarare\bin\Debug\numarare.exe
+D:\exercitii\numarare\numarare\bin\Debug\numarare.pdb
+D:\exercitii\numarare\numarare\obj\Debug\numarare.csprojResolveAssemblyReference.cache
+D:\exercitii\numarare\numarare\obj\Debug\numarare.csproj.CoreCompileInputs.cache
+D:\exercitii\numarare\numarare\obj\Debug\numarare.exe
+D:\exercitii\numarare\numarare\obj\Debug\numarare.pdb

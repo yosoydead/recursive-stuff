@@ -1,0 +1,1 @@
+A simple recursive program that counts how many times a given int is found in an array
