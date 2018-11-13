@@ -2,9 +2,10 @@ For each inch, we place a tick with a numeric label. We denote the length of the
 
 Ex:
 ```
-----0       -----0      ---0
--           -           -
---          --          --
+----0 
+-           -----0      ---0
+--          -           -
+-           --          --
 ---         -           -
 -           ---         ---1
 --          -           -
